@@ -1,1 +1,51 @@
 4-empty
+5-execute
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 28 Sep 20 14:26 5-execute
+-rw-rw-r-- 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./hello
+bash: ./hello: Permission denied
+julien@ubuntu:/tmp/h$ ./5-execute 
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 28 Sep 20 14:26 5-execute
+-rwxrw-r-- 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ 
+
+ 6-multiple_permissions
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 36 Sep 20 14:31 6-multiple_permissions
+-r--r----- 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./6-multiple_permissions 
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 36 Sep 20 14:31 6-multiple_permissions
+-r-xr-xr-- 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ 
+
+7-everybody
+Everybody @ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 j everybody  28 Sep 20 14:35 7-everybody
+-rw-r----- 1 everybody 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./7-everybody 
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 everybody  28 Sep 20 14:35 7-everybody
+-rwxr-x--x 1 everybody  23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ 
+8-James_Bond
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 28 Sep 20 14:40 8-James_Bond
+-rwxr-x--x 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./8-James_Bond 
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 28 Sep 20 14:40 8-James_Bond
+-------rwx 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ 
+9-John_Doe
+-rwxr-x-wx 1 John Doe 23 Sep 20 14:25 hello
