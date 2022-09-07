@@ -1,0 +1,22 @@
+Alivonne@ubuntu:/tmp/0x02$ cat list 
+C#
+C
+Javascript
+Perl
+PHP
+PHP
+ASP
+R
+Go
+C#
+C++
+R
+Perl
+Python
+Javascript
+Java
+ASP
+Alivonne@ubuntu:/tmp/0x02$ cat list | ./13-unique 
+c
+Go
+julien@ubuntu:/tmp/0x02$ 
