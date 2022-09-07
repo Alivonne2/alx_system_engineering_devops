@@ -1,0 +1,11 @@
+$ ./3-twofiles
+##
+# User Database
+#dy:*:-2:-2:/var/empty:/usr/bin/false
+
+root:*:0:0:System Administrator:/var/root:/bin/sh
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+127.0.0.1   localhost
+255.255.255.255 broadcasthost
+::1 localhost
+$
